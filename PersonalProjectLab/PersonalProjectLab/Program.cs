@@ -9,11 +9,11 @@ namespace PersonalProjectLab
         {
 
             Calculate calc = new Calculate();
-            float answer;
+            double answer;
             Console.WriteLine("Please input First Number: ");
-            calc.Num1 = float.Parse(Console.ReadLine());
+            calc.Num1 = Double.Parse(Console.ReadLine());
             Console.WriteLine("Please input Second Number: ");
-            calc.Num2 = float.Parse(Console.ReadLine());
+            calc.Num2 = Double.Parse(Console.ReadLine());
             Console.WriteLine("1. Add");
             Console.WriteLine("2. Subtract");
             Console.WriteLine("3. Multiply");
@@ -39,10 +39,9 @@ namespace PersonalProjectLab
             {
                 answer = calc.Divide();
             }
-
-            Console.WriteLine("Answer:");
-            Console.WriteLine(answer);
-
+            answer = Math.Round(answer, 2);
+            Console.WriteLine("Answer: {0, -10}" , answer);
+            
         }
     }
 }

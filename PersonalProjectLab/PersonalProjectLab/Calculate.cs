@@ -3,10 +3,10 @@ namespace PersonalProjectLab
 {
     public class Calculate
     {
-        private float num1;
-        private float num2;
+        private double num1;
+        private double num2;
 
-        public float Num1
+        public double Num1
         {
 
             get
@@ -20,7 +20,7 @@ namespace PersonalProjectLab
 
         }
 
-        public float Num2
+        public double Num2
         {
 
             get
@@ -34,22 +34,22 @@ namespace PersonalProjectLab
 
         }
 
-        public float Add()
+        public double Add()
         {
             return num1 + num2;
         }
 
-        public float Subtract()
+        public double Subtract()
         {
             return num1 - num2;
         }
 
-        public float Multiply()
+        public double Multiply()
         {
             return num1 * num2;
         }
 
-        public float Divide()
+        public double Divide()
         {
             return num1 / num2;
         }

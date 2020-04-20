@@ -11,10 +11,12 @@ namespace PersonalProjectLabTests
         public void TestMethod1()
         {
             Calculate calc = new Calculate();
-            calc.Num1 = 4.7f;
+            calc.Num1 = 4.7;
             calc.Num2 = 5;
 
-            calc.Add();
+            double answer1 = calc.Add();
+
+            Assert.AreEqual(9.7, answer1);
 
         }
 
@@ -23,10 +25,12 @@ namespace PersonalProjectLabTests
         {
             Calculate calc = new Calculate();
             calc.Num1 = 16;
-            calc.Num2 = 12.2f;
+            calc.Num2 = 17;
 
 
-            calc.Subtract();
+           double answer2 =  calc.Subtract();
+
+            Assert.AreEqual(-1, answer2);
 
         }
 
@@ -35,11 +39,12 @@ namespace PersonalProjectLabTests
         {
             Calculate calc = new Calculate();
             calc.Num1 = 12;
-            calc.Num2 = 14.5f;
+            calc.Num2 = 14.5;
 
 
-            calc.Multiply();
+            double answer3 = calc.Multiply();
 
+            Assert.AreEqual(174, answer3);
         }
 
         [TestMethod]
@@ -47,10 +52,12 @@ namespace PersonalProjectLabTests
         {
             Calculate calc = new Calculate();
             calc.Num1 = 7;
-            calc.Num2 = 1.69f;
+            calc.Num2 = 3.5;
 
 
-            calc.Divide();
+           double answer4 = calc.Divide();
+
+            Assert.AreEqual(2, answer4);
         }
     }
 }
